@@ -1,0 +1,18 @@
+.conteudo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0 px;
+}
+
+.conteudo div {
+  color: gray;
+  border-bottom: 2px solid;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+/* odd - linhas pares, even - linhas ímpares  */
+/*.conteudo div:nth-child(odd){*/
+.conteudo div:nth-child(even){
+    background-color: lightgray;
+}

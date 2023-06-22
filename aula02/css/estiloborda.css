@@ -1,0 +1,22 @@
+body{
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    border-width: thin;
+    border-color: blue;
+    border-style: solid;
+}
+
+a{
+    border: thick red dashed;
+    border-bottom: 5px dotted green;
+}
+
+p{
+    width: 250px;
+    height: 250px;
+    border: 5px dotted black;
+    border-radius: 30px 20px 0px 50px;
+}

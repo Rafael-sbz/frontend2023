@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Throw</title>
+  </head>
+  <body>
+    <script>
+      try {
+        let preco = prompt("Digite o valor:");
+        if (preco < 0) {
+          throw new Error("Valor inválido");
+        }
+        documento.write(preco);
+      } catch (error) {
+        document.write(error);
+      } finally {
+        document.write("Encerrar programa");
+      }
+    </script>
+  </body>
+</html>

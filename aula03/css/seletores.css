@@ -1,0 +1,13 @@
+
+.destacar, .missao, #titulo{
+    color: green;
+}
+
+.missao{    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 28px;
+}
+
+article .destacar > strong{
+    color: red;
+}

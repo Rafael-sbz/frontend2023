@@ -1,0 +1,17 @@
+.pizza {
+  position: absolute;
+  top: 0;
+  right: 1%;  
+  width: 600px; /* width of container */
+  height: 120px; /* height of container */
+  object-fit: cover;
+  object-position: 100px 0px; /* try 20% 10% */
+  opacity: 0.75;
+}
+
+.layout-cabecalho {
+  background-color: rgb(207, 29, 29);
+  height: 105px;
+  padding: 5px;
+  box-shadow: 1px 2px 10 px black;
+}

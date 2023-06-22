@@ -1,0 +1,35 @@
+body{
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+
+}
+
+h1{
+    margin: 0;
+}
+
+article{
+    background-color: gray;
+}
+
+.coluna1, .coluna2{
+    background-color: #ffaa11;
+}
+
+.coluna1{
+    float: left;
+    width: 48%;
+}
+
+.coluna2{
+    float: right;
+    width: 48%;
+}
+
+div{
+    text-align: center;
+    text-decoration: underline;
+    background-color: aqua;
+    clear: both;
+}

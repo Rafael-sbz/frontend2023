@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow</title>
+  </head>
+  <body>
+    <script>
+      // Uma linha só não precisa de chave
+      let mostrar = () => document.write("Hello World!<br>");
+      mostrar();
+
+      // Mais de uma linha de código precisa de chave
+      let mostrar2 = (nome) => {
+        document.write("Hello World! " + nome + "<br>");
+        document.write("Teste <br>");
+      };
+      mostrar2("RONI");
+
+      // exercício
+      const soma = (a, b) => document.write(a + b);
+      soma(10, 140);
+    </script>
+  </body>
+</html>

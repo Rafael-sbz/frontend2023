@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de assinatura do plano de internet</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/componentes.css" />
+  </head>
+  <body>
+    <header class="layout-cabecalho layout-cabecalho--position">
+      <div class="container">
+        <nav class="navegacao">
+          <img src="./img/internet.png" alt="Internet" />
+        </nav>
+      </div>
+    </header>
+
+    <main class="layout-assinatura">
+      <div class="container">
+        <h1 class="titulo-formulario">Assinatura de Plano de Internet</h1>
+        <form class="form" action="#" method="post">
+          <div class="row">
+            <div class="my-3 col-sm-12 col-md-12">
+              <label for="nome" class="form-label">Nome:</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite o seu nome"
+                class="form-control"
+                required="true"
+                maxlength="50"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="my-3 col-sm-12 col-md-12">
+              <label for="email" class="form-label">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                required="true"
+                maxlength="30"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="my-3 col-sm-3 col-md-3">
+              <label for="telefone">Telefone:</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="telefone"
+                name="telefone"
+              />
+            </div>
+
+            <div class="my-3 col-sm-3 col-md-3">
+              <label for="data-nascimento">Data Nascimento:</label>
+              <input
+                type="date"
+                class="form-control"
+                id="data-nascimento"
+                name="data-nascimento"
+              />
+            </div>
+
+            <div class="my-3 col-sm-3 col-md-3">
+              <label for="tipo-plano">Escolha o tipo de plano:</label>
+              <select name="tipo-plano" id="tipo-plano" required="true">
+                <option value="B">Básico</option>
+                <option value="I">Intermediário</option>
+                <option value="A">Avançado</option>
+              </select>
+            </div>
+
+            <div class="my-3 col-sm-3 col-md-3">
+              <label>Serviço adicional:</label>
+              <div>
+                <input
+                  type="checkbox"
+                  id="netflix"
+                  name="tipo-servico"
+                  value="Netflix"
+                />
+                <label for="netflix">Netflix</label>
+                <input
+                  type="checkbox"
+                  id="prime"
+                  name="tipo-servico"
+                  value="Prime"
+                />
+                <label for="prime">Prime</label>
+                <input
+                  type="checkbox"
+                  id="disney"
+                  name="tipo-servico"
+                  value="Disney"
+                />
+                <label for="disney">Disney</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="my-3 col-sm-6 col-md-6">
+              <label for="avaliacao">Avaliação do atendimento:</label>
+              <div>
+                <input type="range" list="avaliacao" />
+                <datalist id="avaliacao">
+                  <option value="0" label="0%">0%</option>
+                  <option value="10" label="10%"></option>
+                  <option value="20" label="20%"></option>
+                  <option value="30" label="30%"></option>
+                  <option value="40" label="40%"></option>
+                  <option value="50" label="50%"></option>
+                  <option value="60" label="60%"></option>
+                  <option value="70" label="70%"></option>
+                  <option value="80" label="80%"></option>
+                  <option value="90" label="90%"></option>
+                  <option value="100" label="100%"></option>
+                </datalist>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="reset" class="btn btn-secondary">Limpar</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="layout-rodape">
+      <div class="container">
+        <p>
+          &copy; Infotec serviços de desenvolvimento de páginas de internet.
+        </p>
+      </div>
+    </footer>
+
+    <script src="formulario.js">
+
+    </script>
+  </body>
+</html>

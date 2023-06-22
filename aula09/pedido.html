@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const itensPedido = [
+        { numero: 223, status: "Entregue", total: 1490 },
+        { numero: 243, status: "Enviado", total: 1420 },
+        { numero: 123, status: "Pago", total: 2900 },
+        { numero: 343, status: "Enviado", total: 190 },
+        { numero: 893, status: "Entregue", total: 500 },
+      ];
+
+      // Listar todos os pedidos com status "Enviado"
+      // Total todos os pedidos
+      // Total todos os pedidos pagos
+
+      itensPedido
+        .filter((itensPedido) => itensPedido.status == "Entregue")
+        .forEach((itensPedido) =>
+          document.write(
+            "Numero do pedido: " +
+              itensPedido.numero +
+              " Status: " +
+              itensPedido.status +
+              "<br>"
+          )
+        );
+
+        const totalPedidos = itensPedido.reduce((acum,item)=>acum+item.total,0);
+        document.write("Total dos Pedidos: " + totalPedidos);
+
+        const totalPedidosPagos = itensPedido
+        .filter((i) => i.status == "Pago")
+        .reduce((acum, i) => acum + i.total, 0);
+      document.write("Total de pedidos pagos:" + totalPedidosPagos);
+    </script>
+  </body>
+</html>

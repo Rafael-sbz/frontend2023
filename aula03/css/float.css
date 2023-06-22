@@ -1,0 +1,13 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    text-align: justify;
+}
+
+img{
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 6px solid green;
+    padding: 20px;
+}

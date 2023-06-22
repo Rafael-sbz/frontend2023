@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Aula-1</p>
+    <p>Aula-2</p>
+    <p>Aula-3</p>
+    <p>Aula-4</p>
+
+    <script>
+      var tags = document.getElementsByTagName("p");
+      for (let i = 0; i < tags.length; i++) {
+        tags[i].style.color = "red";
+        tags[i].innerhtml = "Teste";
+      }
+
+      var tags2 = document.getElementsByName("*");
+      tags2[8].style.color = "black";
+    </script>
+  </body>
+</html>

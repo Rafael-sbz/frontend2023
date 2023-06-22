@@ -1,0 +1,21 @@
+.disciplinas{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.disciplinas li{
+    color: blue;    
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;    
+}
+
+.disciplinas li:first-child{
+    color: red;
+}
+
+.disciplinas li:last-child{
+    color: aquamarine;
+}

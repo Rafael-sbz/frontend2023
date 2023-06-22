@@ -1,0 +1,56 @@
+.d1 {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+.d2 {
+  width: 600px;
+  height: 300px;
+  border: 2px dashed black;
+  background-color: lightgray;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.d3 {
+  width: 520px;
+  height: 250px;
+  border: 2px solid black;
+  background-color: lightgreen;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.d4 {
+  width: 450px;
+  height: 210px;
+  border: 2px solid black;
+  background-color: lightgray;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.d5 {
+  width: 370px;
+  height: 160px;
+  border: 1px dashed black;
+  background-color: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border: 5px solid red;
+  padding: 20px;
+  background-color: lightgray;
+}

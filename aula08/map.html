@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body>
+    <script>
+        const numeros = [20,40,1, 90, 100, 34, 100];
+        const novoArray = [];
+        for (let i = 0; i < numeros.length; i++) {
+            novoArray.push(numeros[i]*2);            
+        }
+        document.write(novoArray);
+
+        const novoArrayMap = numeros.map(n => n*2);
+        document.write("<br>" + novoArrayMap);
+
+        novoArrayMap.forEach(n => document.write("<br>" + n + "<br>"));
+
+    </script>
+</body>
+</html>

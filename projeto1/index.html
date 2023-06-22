@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operadora de Serviços de Internet</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/componentes.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="layout-cabecalho layout-cabecalho--position">
+      <div class="container">
+        <nav class="navegacao">
+          <img src="./img/internet.png" alt="Internet" />
+          <div class="navegacao__menu">
+            <button class="botao--chaveador js-botao--alternar"></button>
+
+            <ul class="menu js-menu menu--exibindo">
+              <li class="menu__item">
+                <a href="#">História</a>
+              </li>
+              <li class="menu__item">
+                <a href="#planos">Planos e Preços</a>
+              </li>
+              <li class="menu__item">
+                <a href="#">Contato</a>
+              </li>
+              <li class="menu__item">
+                <a href="#">Login</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="layout-principal">
+      <div class="container">
+        <div class="principal">
+          <h1 class="principal__titulo">
+            A melhor internet banda larga do estado do Rio de Janeiro
+          </h1>
+          <p class="principal__subtitulo">
+            Temos pacotes que cabem no seu bolso
+          </p>
+        </div>
+        <div class="principal__acao">
+          <a href="#planos" class="botao botao--principal"
+            >Conheça os pacotes</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <div class="layout-depoimento">
+      <div class="container">
+        <div class="depoimento">
+          <blockquote class="depoimento__block">
+            Gostei muito da internet da empresa, nunca tive problemas de
+            conexão. Estou muito satisfeito com o serviço prestado pela empresa.
+          </blockquote>
+          <div class="depoimento__autor">
+            <img src="./img/man.png" width="170 px" alt="Imagem" />
+            <p>José das Coves</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="planos" class="layout-planos">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <article class="plano">
+              <h2 class="plano__cabecalho">Básico</h2>
+              <div class="plano__preco">79,90</div>
+              <ul class="plano__caracteristicas">
+                <li>Até <strong>10 usuários</strong></li>
+                <li><strong> 200MB</strong> de acesso</li>
+                <li>Instalação Grátis</li>
+                <li>Fibra Ótica</li>
+                <li>Sem fidelidade</li>
+              </ul>
+              <footer class="plano__rodape">
+                <a href="assine.html" class="botao botao--assinar">Assine</a>
+              </footer>
+            </article>
+          </div>
+
+          <div class="col-md-4">
+            <article class="plano plano--mais--vendido">
+              <h2 class="plano__cabecalho">Intermediário</h2>
+              <div class="plano__preco">99,90</div>
+              <ul class="plano__caracteristicas">
+                <li>Até <strong>20 usuários</strong></li>
+                <li><strong> 400MB</strong> de acesso</li>
+                <li>Instalação Grátis</li>
+                <li>Fibra Ótica</li>
+                <li>Sem fidelidade</li>
+              </ul>
+              <footer class="plano__rodape">
+                <a href="assine.html" class="botao botao--assinar">Assine</a>
+              </footer>
+            </article>
+          </div>
+
+          <div class="col-md-4 ultima--coluna">
+            <article class="plano">
+              <h2 class="plano__cabecalho">Avançado</h2>
+              <div class="plano__preco">119,90</div>
+              <ul class="plano__caracteristicas">
+                <li>Até <strong>50 usuários</strong></li>
+                <li><strong> 1GB</strong> de acesso</li>
+                <li>Instalação Grátis</li>
+                <li>Fibra Ótica</li>
+                <li>Sem fidelidade</li>
+              </ul>
+              <footer class="plano__rodape">
+                <a href="assine.html" class="botao botao--assinar">Assine</a>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="layout-rodape">
+      <div class="container">
+        <p>
+          &copy; Infotec serviços de desenvolvimento de páginas de internet.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/script.js">
+
+    </script>
+  </body>
+</html>

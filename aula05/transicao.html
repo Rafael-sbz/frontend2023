@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transição</title>
+    <link rel="stylesheet" href="./css/transicao.css" />
+
+    <style>
+      .item {
+        width: 100px;
+        height: 100px;
+      }
+
+      .transicaoFundo {
+        transition: background-color 2s;
+      }
+      .transicaoFundo:hover {
+        background-color: green;
+      }
+
+      .transicaoTamanho {
+        transition: transform 0.4s;
+      }
+
+      .transicaoTamanho:hover {
+        transform: scale(1.5);
+      }
+
+      .transicaoRotacao {
+        transition: transform 0.2s;
+      }
+
+      .transicaoRotacao:hover {
+        transform: rotateZ(360deg);
+      }
+
+      .transicaoAtraso {
+        transition: width 2s, height 3s;
+      }
+
+      .transicaoAtraso:hover {
+        width: 400px;
+        height: 200px;
+      }
+
+      .transicaoCheckbox {
+        width: 50px;
+        height: 50px;
+        transition: transform 0.5s;
+      }
+
+      .transicaoCheckbox:checked {
+        transform: rotateY(360deg);
+      }
+
+      .transicaoText {
+        font-size: 32px;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        transition: transform 0.5s;
+      }
+
+      .transicaoText:focus {
+        transform: scaleX(0.6) scale(0.5) rotateZ(360deg);
+      }
+
+      .spinner {
+        border-radius: 50%;
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotateZ(0deg);
+        }
+        to {
+          transform: rotateZ(360deg);
+        }
+      }
+
+      .animacaoSpinner {
+        animation: rotate 2s linear infinite;
+      }
+
+      .animacaoSpinnerEase {
+        animation: rotate 4s ease infinite;
+      }
+
+      @keyframes promocao {
+        0% {
+          content: "Promoção";
+        }
+        50% {
+          content: "";
+        }
+        100% {
+          content: "Frete Grátis";
+        }
+      }
+
+      .animacaoConteudo:after {
+        content: "";
+        animation: promocao 2s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo Transição</h1>
+    <h2>Mouse hover</h2>
+    <section>
+      <div class="item azul transicaoFundo">Azul</div>
+      <div class="item amarelo transicaoFundo">Amarelo</div>
+      <div class="item verde transicaoTamanho">Verde</div>
+      <div class="item vermelho transicaoRotacao">Vermelho</div>
+    </section>
+
+    <hr />
+    <section>
+      <div class="item vermelho transicaoAtraso">Vermelho</div>
+    </section>
+
+    <hr />
+    <section>
+      <input type="checkbox" class="transicaoCheckbox" />
+    </section>
+
+    <hr />
+    <section>
+      <input type="text" class="transicaoText" />
+    </section>
+
+    <hr />
+    <h2>Spinners</h2>
+    <section>
+      <div class="item azul spinner animacaoSpinner">Azul</div>
+      <div class="item azul spinner animacaoSpinnerEase">Azul-Ease</div>
+    </section>
+
+    <hr />
+    <h2>Conteúdo</h2>
+    <section>
+      <a href="https://www.google.com.br">
+        <div class="item vermelho animacaoConteudo"></div>
+      </a>
+    </section>
+  </body>
+</html>

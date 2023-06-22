@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter</title>
+  </head>
+  <body>
+    <script>
+      const numeros = [2, 5, 9, 10, 12, 14, 20];
+      const numerosMultiplos2 = numeros.filter((n) => n % 2 == 0);
+      document.write("Múltiplos de 2: " + numerosMultiplos2);
+
+      const numerosMapFilter = numeros
+        .filter((n) => n % 2 == 0)
+        .map((n) => n * 2)
+        .forEach((n) => document.write("<br>" + n + "<br>"));
+    </script>
+  </body>
+</html>

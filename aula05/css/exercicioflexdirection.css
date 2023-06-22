@@ -1,0 +1,41 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.teste {
+  background-color: gray;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+}
+
+.D,
+.C,
+.B,
+.A {
+  padding: 10px;
+  border-radius: 50%;
+  align-items: center;
+  border: 2px solid;
+}
+
+.D {
+  border-color: rgb(47, 255, 141);
+  background-color: rgb(47, 255, 141);
+}
+.C {
+  border-color: rgb(255, 47, 47);
+  background-color: rgb(255, 47, 47);
+}
+.B {
+  border-color: rgb(241, 255, 47);
+  background-color: rgb(241, 255, 47);
+}
+.A {
+  border-color: rgb(62, 135, 195);
+  background-color: rgb(79, 146, 214);
+}
